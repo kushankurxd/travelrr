@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen w-screen">
-    <div class="h-full w-1/2 hidden sm:flex flex-col relative">
+    <div class="h-full w-1/2 hidden lg:flex flex-col relative">
       <!-- Left image and its overlay -->
       <img
         src="../assets/travel-0.jpg"
@@ -28,6 +28,35 @@
         />
       </div>
     </div>
+
+    <!-- Right section -->
+    <div class="h-full w-full lg:w-1/2 flex flex-col relative">
+      <!-- Navigation menu -->
+      <div class="flex flex-row items-center m-5">
+        <Hamburger />
+        <div class="flex-1 flex justify-end items-center">
+          <NavigationItem text="Travelrr Stories" class="hidden sm:block" />
+          <NavigationItem text="Blog" class="hidden sm:block" />
+          <ProfileAvatar class="ml-10" />
+        </div>
+      </div>
+
+      <!-- Heading  -->
+      <div class="m-5 lg:mt-10 mt-5">
+        <h2
+          class="font-bold text-4xl xl:text-5xl xxl:text-xl text-shadow-md text-gray-900"
+        >
+          Let's Enjoy
+        </h2>
+        <h2
+          class="font-bold text-4xl xl:text-5xl xxl:text-xl mt-2 text-shadow-md text-gray-900"
+        >
+          the Vacations!
+        </h2>
+      </div>
+
+      
+    </div>
   </div>
 </template>
 
@@ -35,11 +64,17 @@
 import { Component, Vue } from "vue-property-decorator";
 import Logo from "../components/Logo.vue";
 import Button from "../components/Button.vue";
+import Hamburger from "../components/Hamburger.vue";
+import NavigationItem from "../components/Navigation-item.vue";
+import ProfileAvatar from "../components/Profile-avatar.vue";
 
 @Component({
   components: {
     Logo,
     Button,
+    Hamburger,
+    NavigationItem,
+    ProfileAvatar,
   },
 })
 export default class Home extends Vue {}

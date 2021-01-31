@@ -10,7 +10,7 @@
 import { Component, Vue, Prop } from "vue-property-decorator";
 
 @Component
-export default class Logo extends Vue {
+export default class Button extends Vue {
   @Prop() text!: string;
 }
 </script>
