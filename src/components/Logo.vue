@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-gray-200 text-3xl font-bold hover:text-white">
+  <h1 class="text-gray-200 text-2xl xl:text-3xl font-bold hover:text-white">
     {{ title }}
   </h1>
 </template>

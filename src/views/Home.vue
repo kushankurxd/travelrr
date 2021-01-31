@@ -14,11 +14,11 @@
       <div class="flex-1"></div>
 
       <div class="m-5 ml-8 mb-20 z-10">
-        <h2 class="text-gray-200 text-4xl">Hey!</h2>
-        <h2 class="text-white font-medium text-5xl mt-2">
+        <h2 class="text-gray-200 text-3xl xl:text-4xl">Hey!</h2>
+        <h2 class="text-white font-medium text-4xl xl:text-5xl mt-2">
           Where are you going on
         </h2>
-        <h2 class="text-white font-medium text-5xl mt-2">
+        <h2 class="text-white font-medium text-4xl xl:text-5xl mt-2">
           Vaccation this Holidays?
         </h2>
         <!-- button -->
@@ -55,7 +55,10 @@
         </h2>
       </div>
 
-      
+      <!-- Search -->
+      <div class="m-5 mr-16 xl:mr-20">
+        <Search />
+      </div>
     </div>
   </div>
 </template>
@@ -67,6 +70,7 @@ import Button from "../components/Button.vue";
 import Hamburger from "../components/Hamburger.vue";
 import NavigationItem from "../components/Navigation-item.vue";
 import ProfileAvatar from "../components/Profile-avatar.vue";
+import Search from "../components/Search.vue";
 
 @Component({
   components: {
@@ -75,6 +79,7 @@ import ProfileAvatar from "../components/Profile-avatar.vue";
     Hamburger,
     NavigationItem,
     ProfileAvatar,
+    Search,
   },
 })
 export default class Home extends Vue {}
