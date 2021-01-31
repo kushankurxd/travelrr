@@ -42,7 +42,7 @@
       </div>
 
       <!-- Heading  -->
-      <div class="m-5 lg:mt-10 mt-5">
+      <div class="m-5">
         <h2
           class="font-bold text-4xl xl:text-5xl xxl:text-xl text-shadow-md text-gray-900"
         >
@@ -59,6 +59,11 @@
       <div class="m-5 mr-5 lg:mr-8 md:mr-20 xl:mr-20">
         <Search />
       </div>
+
+      <!-- tabs -->
+      <div class="m-5">
+        <Tabs v-bind:tabs="tabs" @on-selected="onTabSelected" />
+      </div>
     </div>
   </div>
 </template>
@@ -71,6 +76,7 @@ import Hamburger from "../components/Hamburger.vue";
 import NavigationItem from "../components/Navigation-item.vue";
 import ProfileAvatar from "../components/Profile-avatar.vue";
 import Search from "../components/Search.vue";
+import Tabs from "../components/Tabs.vue";
 
 @Component({
   components: {
@@ -80,9 +86,29 @@ import Search from "../components/Search.vue";
     NavigationItem,
     ProfileAvatar,
     Search,
+    Tabs,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  tabs = [
+    {
+      title: "All",
+    },
+    {
+      title: "New",
+    },
+    {
+      title: "Reccomended",
+    },
+    {
+      title: "Most Visited",
+    },
+  ];
+
+  onTabSelected(index: number): void {
+    console.log(index);
+  }
+}
 </script>
 
 <style scoped>
