@@ -56,7 +56,7 @@
       </div>
 
       <!-- Search -->
-      <div class="m-5 mr-16 xl:mr-20">
+      <div class="m-5 mr-5 lg:mr-8 md:mr-20 xl:mr-20">
         <Search />
       </div>
     </div>
