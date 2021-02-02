@@ -64,6 +64,12 @@
       <div class="m-5">
         <Tabs v-bind:tabs="tabs" @on-selected="onTabSelected" />
       </div>
+
+      <div class="m-5 overflow-auto grid xl:grid-cols-3 xl:gap-4">
+        <TravelCard image="eiffel-tower.jpg" title="Eiffel Tower" subtitle="Paris" opacity="opacity-10" />
+        <TravelCard image="giant-bomb.jpg" title="Giant Bomb" subtitle="Dubai" opacity="opacity-40" />
+        <TravelCard image="fly-night.jpg" title="Eiffel Tower" subtitle="Singapore" opacity="opacity-20" />  
+      </div>
     </div>
   </div>
 </template>
@@ -77,6 +83,7 @@ import NavigationItem from "../components/Navigation-item.vue";
 import ProfileAvatar from "../components/Profile-avatar.vue";
 import Search from "../components/Search.vue";
 import Tabs from "../components/Tabs.vue";
+import TravelCard from "../components/Travel-Card.vue";
 
 @Component({
   components: {
@@ -87,6 +94,7 @@ import Tabs from "../components/Tabs.vue";
     ProfileAvatar,
     Search,
     Tabs,
+    TravelCard,
   },
 })
 export default class Home extends Vue {
