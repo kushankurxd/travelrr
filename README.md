@@ -1,4 +1,9 @@
-# lets-try
+# Travelrr  
+### A hello world project in Vue.js [Preview](https://travelrr-xd.netlify.app/)
+
+#### Screenshot
+![travelrr](https://user-images.githubusercontent.com/37204706/107031472-3c779980-67d8-11eb-9920-3c578453038c.png)
+
 
 ## Project setup
 ```
