@@ -61,11 +61,11 @@
       </div>
 
       <!-- tabs -->
-      <div class="m-5">
+      <div class="sm:m-5 m-0 ml-2">
         <Tabs v-bind:tabs="tabs" @on-selected="onTabSelected" />
       </div>
 
-      <div class="m-5 overflow-auto grid xl:grid-cols-3 xl:gap-4">
+      <div class="m-5 overflow-auto grid xl:grid-cols-3 xl:gap-4 grid-cols-1 gap-2">
         <TravelCard image="eiffel-tower.jpg" title="Eiffel Tower" subtitle="Paris" opacity="opacity-10" />
         <TravelCard image="giant-bomb.jpg" title="Giant Bomb" subtitle="Dubai" opacity="opacity-40" />
         <TravelCard image="fly-night.jpg" title="Eiffel Tower" subtitle="Singapore" opacity="opacity-20" />  

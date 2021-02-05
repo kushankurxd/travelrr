@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-200 xl:h-72 rounded-xl relative">
+  <div class="bg-gray-200 h-64 xl:h-72 rounded-xl relative">
     <img
       :src="require(`../assets/${image}`)"
-      class="rounded-xl xl:h-72 w-full object-cover absolute z-auto"
+      class="rounded-xl h-64 xl:h-72 w-full object-cover absolute z-auto"
     />
     <!-- Overlay -->
     <div
